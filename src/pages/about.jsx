@@ -6,29 +6,24 @@ import { Users, Radio, Mic, Music, Award } from 'lucide-react';
 const AboutPage = () => {
   const teamMembers = [
     {
-      name: "Ahmed Ben Salah",
+      name: "HARRABI Yosr",
       role: "Président du club",
       image: "/images/team/ahmed.jpg",
-      description: "Étudiant en 4ème année génie informatique, passionné de radio depuis 3 ans."
+      description: "Étudiant en 3ème année génie électrique."
     },
     {
-      name: "Marie Dupont",
-      role: "Responsable technique",
+      name: "MISSAOUI Yassine",
+      role: "Webmaster",
       image: "/images/team/marie.jpg",
-      description: "Étudiante en 3ème année génie des télécommunications, spécialisée en audio."
+      description: "Étudiante en 3ème année génie informatique"
     },
     {
-      name: "Karim Jlassi",
-      role: "Responsable programmation",
+      name: "Karim ",
+      role: "Responsable ",
       image: "/images/team/karim.jpg",
-      description: "Étudiant en 4ème année, anime l'émission 'Tech Talk' chaque semaine."
+      description: "Étudiant en ème année"
     },
-    {
-      name: "Sarah Melliti",
-      role: "Responsable événements",
-      image: "/images/team/sarah.jpg",
-      description: "Étudiante en 3ème année, organise les événements culturels du club."
-    }
+    
   ];
 
   const missions = [
