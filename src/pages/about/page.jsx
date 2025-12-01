@@ -8,22 +8,45 @@ const AboutPage = () => {
     {
       name: "HARRABI Yosr",
       role: "Président du club",
-      image: "/images/team/ahmed.jpg",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
       description: "Étudiant en 3ème année génie électrique."
     },
     {
+      name: "Arij Arroum",
+      role: "VP MEDIA MANAGER",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      description: "Étudiante en 3ème année génie électrique."
+    },
+    {
       name: "MISSAOUI Yassine",
-      role: "Webmaster",
-      image: "/images/team/marie.jpg",
+      role: "VP WEB MANAGER",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400/Missaoui Yassine.jpeg",
       description: "Étudiante en 3ème année génie informatique"
     },
     {
-      name: "Karim ",
-      role: "Responsable ",
-      image: "/images/team/karim.jpg",
-      description: "Étudiant en ème année"
+      name: "Dhiaeddine Jerbi",
+      role: "VP Financial Officer",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      description: "Étudiant en 3ème année génie informatique"
     },
-    
+    {
+      name: "Hideya Dammak",
+      role: "VP Content manage",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      description: "Étudiante en 3ème année génie électrique"
+    },
+    {
+      name: "Yathreb Bouzouraa",
+      role: "VP HR manager",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      description: "Étudiante en 3ème année génie électrique"
+    },
+    {
+      name: "Mohamed Kharrat",
+      role: "VP Technical manager",
+      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      description: "Étudiant en 3ème année génie électrique"
+    },
   ];
 
   const missions = [
@@ -48,6 +71,33 @@ const AboutPage = () => {
       description: "Rassembler les étudiants autour de projets communs et d'échanges."
     }
   ];
+
+  // Fonction pour vérifier si l'image existe
+  const ImageWithFallback = ({ src, alt, className, memberName }) => {
+    const [imageError, setImageError] = React.useState(false);
+
+    const handleImageError = () => {
+      setImageError(true);
+    };
+
+    if (imageError || !src) {
+      return (
+        <div className={`${className} bg-gradient-to-br from-primary-500 to-blue-600 rounded-full flex items-center justify-center`}>
+          <Users className="h-12 w-12 text-white" />
+        </div>
+      );
+    }
+
+    return (
+      <img
+        src={src}
+        alt={alt}
+        className={`${className} rounded-full object-cover`}
+        onError={handleImageError}
+        loading="lazy"
+      />
+    );
+  };
 
   return (
     <>
@@ -192,9 +242,12 @@ const AboutPage = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
               >
-                <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-12 w-12 text-white" />
-                </div>
+                <ImageWithFallback
+                  src={member.image}
+                  alt={member.name}
+                  className="w-32 h-32 mx-auto mb-4"
+                  memberName={member.name}
+                />
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
                   {member.name}
                 </h3>
@@ -209,33 +262,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Rejoindre */}
-      {/* <section className="py-16 bg-primary-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Vous souhaitez nous rejoindre ?
-            </h2>
-            <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Que vous soyez passionné de technique, d'animation ou simplement curieux, 
-              il y a toujours une place pour vous au club radio.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors duration-200">
-                Postuler maintenant
-              </button>
-              <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-medium transition-colors duration-200">
-                Nous rencontrer
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
     </>
   );
 };
