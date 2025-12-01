@@ -110,10 +110,12 @@ const NewsSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center space-x-2">
-            <span>Voir toutes les actualités</span>
-            <ArrowRight className="h-5 w-5" />
-          </button>
+          <Link href="/radio">
+            <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center space-x-2">
+              <span>Voir tous les actualités</span>
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>
