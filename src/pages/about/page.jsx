@@ -8,43 +8,43 @@ const AboutPage = () => {
     {
       name: "HARRABI Yosr",
       role: "Président du club",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      image: "images/",
       description: "Étudiant en 3ème année génie électrique."
     },
     {
       name: "Arij Arroum",
       role: "VP MEDIA MANAGER",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      image: "images/",
       description: "Étudiante en 3ème année génie électrique."
     },
     {
       name: "MISSAOUI Yassine",
       role: "VP WEB MANAGER",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400/Missaoui Yassine.jpeg",
-      description: "Étudiante en 3ème année génie informatique"
+      image: "/images/Missaoui Yassine.jpeg",
+      description: "Étudiant en 3ème année génie informatique"
     },
     {
       name: "Dhiaeddine Jerbi",
       role: "VP Financial Officer",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      image: "images/",
       description: "Étudiant en 3ème année génie informatique"
     },
     {
       name: "Hideya Dammak",
       role: "VP Content manage",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      image: "images/",
       description: "Étudiante en 3ème année génie électrique"
     },
     {
       name: "Yathreb Bouzouraa",
       role: "VP HR manager",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      image: "images/",
       description: "Étudiante en 3ème année génie électrique"
     },
     {
       name: "Mohamed Kharrat",
       role: "VP Technical manager",
-      image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400",
+      image: "images/",
       description: "Étudiant en 3ème année génie électrique"
     },
   ];
