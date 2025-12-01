@@ -21,7 +21,7 @@ const AboutPage = () => {
       name: "MISSAOUI Yassine",
       role: "VP WEB MANAGER",
       image: "https://drive.google.com/thumbnail?id=1kgir5SUd-xl775-ROQxeLegZErta3KLf&sz=w400/Missaoui Yassine.jpeg",
-      description: "Étudiante en 3ème année génie informatique"
+      description: "Étudiant en 3ème année génie informatique"
     },
     {
       name: "Dhiaeddine Jerbi",
