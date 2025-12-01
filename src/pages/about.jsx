@@ -12,17 +12,43 @@ const AboutPage = () => {
       description: "Étudiant en 3ème année génie électrique."
     },
     {
+      name: "Arij Arroum",
+      role: "VP MEDIA MANAGER",
+      image: "/images/team/karim.jpg",
+      description: "Étudiante en 3ème année génie électrique."
+    },
+    {
       name: "MISSAOUI Yassine",
-      role: "Webmaster",
+      role: "VP WEB MANAGER",
       image: "/images/team/marie.jpg",
       description: "Étudiante en 3ème année génie informatique"
     },
     {
-      name: "Karim ",
-      role: "Responsable ",
-      image: "/images/team/karim.jpg",
-      description: "Étudiant en ème année"
+      name: "Dhiaeddine Jerbi",
+      role: "VP Financial Officer",
+      image: "/images/team/marie.jpg",
+      description: "Étudiant en 3ème année génie informatique"
     },
+    {
+      name: "Hideya Dammak",
+      role: "VP Content manage",
+      image: "/images/team/marie.jpg",
+      description: "Étudiante en 3ème année génie électrique"
+    },
+    {
+      name: "Yathreb Bouzouraa",
+      role: "VP HR manager",
+      image: "/images/team/marie.jpg",
+      description: "Étudiante en 3ème année génie électrique"
+    },
+    {
+      name: "Mohamed Kharrat",
+      role: "VP Technical manager",
+      image: "/images/team/marie.jpg",
+      description: "Étudiant en 3ème année génie électrique"
+    },
+
+    
     
   ];
 
