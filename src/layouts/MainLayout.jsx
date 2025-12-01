@@ -18,7 +18,7 @@ const MainLayout = ({ children }) => {
           {children}
         </main>
         <Footer />
-        <Player />
+        {/* <Player /> */}
       </div>
     </AudioProvider>
   );

@@ -25,7 +25,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61579754904455', icon: Facebook },
-    { name: 'Twitter', href: '#', icon: Twitter },
+    /* { name: 'Twitter', href: '#', icon: Twitter }, */
     { name: 'Instagram', href: 'https://www.instagram.com/enis_radio_club/', icon: Instagram },
     { name: 'YouTube', href: 'https://www.youtube.com/@ENISONAIIR', icon: Youtube },
   ];
@@ -104,17 +104,17 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">+216 XX XXX XXX</span>
+                <span className="text-gray-300">+216  46 570 882</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">contact@radioenis.tn</span>
+                <span className="text-gray-300">enisonaiir@gmail.com</span>
               </div>
             </div>
           </motion.div>
 
           {/* Newsletter */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -133,7 +133,7 @@ const Footer = () => {
                 S'inscrire
               </button>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Bottom Bar */}

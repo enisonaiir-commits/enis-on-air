@@ -1,9 +1,15 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { Play, Calendar, Users } from 'lucide-react';
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
+
 const HeroSection = () => {
+  const router = useRouter(); // ✅ Déclare router ici
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-blue-100 dark:from-dark-900 dark:to-gray-900 overflow-hidden">
       {/* Background elements */}
@@ -34,23 +40,19 @@ const HeroSection = () => {
           {/* Titre principal */}
           <div className="flex flex-row flex-wrap justify-center items-center gap-6 mb-6">
             <Image
-                src="/images/logo-enis-radio.png"
-                alt="Logo Radio ENIS"
-                width={120}
-                height={120}
+              src="/images/logo-enis-radio.png"
+              alt="Logo Radio ENIS"
+              width={120}
+              height={120}
             />
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Radio{' '}
-            <span className="bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">
-              ENIS
-            </span>
-            
-            
-            
-          </h1>
-          
+              Radio{' '}
+              <span className="bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">
+                ENIS
+              </span>
+            </h1>
           </div>
-          
+
           {/* Sous-titre */}
           <motion.p
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
@@ -73,6 +75,7 @@ const HeroSection = () => {
               variant="primary"
               size="lg"
               className="flex items-center space-x-2"
+              onClick={() => router.push('/radio')} // ✅ fonctionne maintenant
             >
               <Play className="h-5 w-5" />
               <span>Écouter en direct</span>
@@ -82,6 +85,7 @@ const HeroSection = () => {
               variant="secondary"
               size="lg"
               className="flex items-center space-x-2"
+              onClick={() => router.push('/events')} // ✅ fonctionne maintenant
             >
               <Calendar className="h-5 w-5" />
               <span>Voir les événements</span>
@@ -99,7 +103,7 @@ const HeroSection = () => {
               { icon: Users, label: 'Membres actifs', value: '50+' },
               { icon: Play, label: 'Émissions', value: '20+' },
               { icon: Calendar, label: 'Événements/mois', value: '5+' },
-            ].map((stat, index) => (
+            ].map((stat) => (
               <motion.div
                 key={stat.label}
                 className="text-center p-6 bg-white/50 dark:bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-dark-700/20"

@@ -93,7 +93,7 @@ const HomePage = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  <Link href="/events">
+                  <Link href="/radio">
                     <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center space-x-2">
                       <span>Voir tous les événements</span>
                       <ArrowRight className="h-5 w-5" />
@@ -110,7 +110,7 @@ const HomePage = () => {
       <NewsSection />
 
       {/* Section CTA */}
-      <section className="py-16 bg-primary-600">
+      {/* <section className="py-16 bg-primary-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -138,7 +138,7 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
