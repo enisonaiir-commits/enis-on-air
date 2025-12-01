@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { formatDate } from '../utils/formatDate';
 import { Calendar, ArrowRight } from 'lucide-react';
-
+import Link from 'next/link';
 // Données mock pour les actualités
 const mockNews = [
   {

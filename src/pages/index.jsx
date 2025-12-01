@@ -93,7 +93,7 @@ const HomePage = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  <Link href="/radio">
+                  <Link href="/events">
                     <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center space-x-2">
                       <span>Voir tous les événements</span>
                       <ArrowRight className="h-5 w-5" />
