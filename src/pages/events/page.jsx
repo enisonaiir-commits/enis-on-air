@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-import { useEvents } from '../hooks/useEvents';
-import EventCard from '../components/EventCard';
+import { useEvents } from '../../hooks/useEvents';
+import EventCard from '../../components/EventCard';
 import { Calendar, Filter, Search, Grid, List } from 'lucide-react';
 
 const EventsPage = () => {

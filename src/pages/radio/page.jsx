@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-import { useAudioPlayer } from '../hooks/useAudio';
-import Button from '../components/Button';
+import { useAudioPlayer } from '../../hooks/useAudio';
+import Button from '../../components/Button';
 import { 
   Play, 
   Pause, 
